@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MangaBuff License API</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎯 MangaBuff License API v2.0</h1>
+        <div class="card">
+            <h2>📡 API Endpoints</h2>
+            <ul>
+                <li><strong>POST /api/activate</strong> - Активация лицензии</li>
+                <li><strong>POST /api/validate</strong> - Валидация лицензии</li>
+                <li><strong>GET /api/licenses</strong> - Список лицензий (требует аутентификации)</li>
+                <li><strong>GET /api/health</strong> - Проверка здоровья сервера</li>
+                <li><strong>GET /api/docs</strong> - Документация API (Swagger)</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h2>🔧 Для разработчиков</h2>
+            <p>API базовая авторизация через JWT токен</p>
+            <p>Пример активации лицензии:</p>
+            <pre><code>POST /api/activate
+Content-Type: application/json
+
+{
+    "license_key": "XXXXXXXX-XXXXXXXX-XXXXXXXX-XXXXXXXX-XXXXXXXX",
+    "hardware_id": "device_unique_id"
+}</code></pre>
+        </div>
+    </div>
+</body>
+</html>
